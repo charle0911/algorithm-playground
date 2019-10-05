@@ -37,6 +37,7 @@ public class MergeTwoBinaryTrees {
         input2.right = new TreeNode(3);
         input2.right.right = new TreeNode(7);
 
+        System.out.println();
         input1.preorder();
         System.out.println();
         input2.preorder();
