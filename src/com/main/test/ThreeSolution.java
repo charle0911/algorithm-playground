@@ -1,11 +1,9 @@
-package com.main.test.three;
+package com.main.test;
 
-import java.util.HashMap;
 import java.util.HashSet;
-import java.util.Map;
 import java.util.Set;
 
-public class Solution {
+public class ThreeSolution {
 
     /**
      * Define a set to clear the duplicate element. Set return true when element is already alive in set.
@@ -54,7 +52,7 @@ public class Solution {
     public static void main(String[] args) {
         int[] inputData = {2,3,1,0,2,5,3};
         int[] duplicate = {0};
-        Solution test = new Solution();
+        ThreeSolution test = new ThreeSolution();
         test.duplicate(inputData, inputData.length, duplicate);
         System.out.println(duplicate[0]);
         test.duplicateWithSwap(inputData, inputData.length, duplicate);

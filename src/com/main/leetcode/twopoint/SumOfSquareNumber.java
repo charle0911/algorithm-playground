@@ -11,18 +11,27 @@ package com.main.leetcode.twopoint;
  * @codeby : IDEA
  * @since : 2019/10/4
  */
-public class SomOfSquareNumber {
+public class SumOfSquareNumber {
 
     public boolean judgeSquareSum(int c) {
         int sqrtC = (int) Math.sqrt(c);
         int initialNumber = 0;
         while (sqrtC != initialNumber) {
-            sqrtC
+            int sum = sqrtC * sqrtC + initialNumber * initialNumber;
+            if (sum > c) {
+                sqrtC--;
+            } else if (sum < c) {
+                initialNumber++;
+            } else {
+                return true;
+            }
         }
+        return false;
     }
 
     public static void main(String[] args) {
         int input = 5;
-
+        SumOfSquareNumber solution = new SumOfSquareNumber();
+        System.out.println(solution.judgeSquareSum(input));
     }
 }

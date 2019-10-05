@@ -1,6 +1,5 @@
-package com.main.leetcode;
+package com.main.leetcode.twopoint;
 
-import java.security.cert.X509Certificate;
 import java.util.stream.Stream;
 
 /**
