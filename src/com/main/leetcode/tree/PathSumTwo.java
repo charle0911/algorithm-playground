@@ -7,7 +7,7 @@ package com.main.leetcode.tree;
  * @codeby : IDEA
  * @since : 2019/10/6
  */
-public class PathSum {
+public class PathSumTwo {
     public boolean hasPathSum(TreeNode root, int sum) {
         if (root == null)
             return false;
@@ -31,7 +31,7 @@ public class PathSum {
 
 
         int sum = 22;
-        PathSum solution = new PathSum();
+        PathSumTwo solution = new PathSumTwo();
         System.out.println(solution.hasPathSum(input1, sum));
     }
 }
