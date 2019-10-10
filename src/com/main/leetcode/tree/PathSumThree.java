@@ -9,7 +9,7 @@ package com.main.leetcode.tree;
  */
 public class PathSumThree {
     public int pathSum(TreeNode root, int sum) {
-        if(root == null) {
+        if (root == null) {
             return 0;
         }
         return pathSumStartWith(root, sum) + pathSum(root.left, sum) + pathSum(root.right, sum);
