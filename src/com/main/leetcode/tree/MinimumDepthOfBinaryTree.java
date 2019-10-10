@@ -1,5 +1,12 @@
 package com.main.leetcode.tree;
 
+/**
+ * 111. Minimum Depth of Binary Tree
+ *
+ * @author : Charlie Lee
+ * @codeby : IDEA
+ * @since : 2019/10/11
+ */
 public class MinimumDepthOfBinaryTree {
     public int minDepth(TreeNode root) {
         if(root == null) {
