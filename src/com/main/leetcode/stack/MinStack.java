@@ -29,7 +29,7 @@ public class MinStack {
 
     public int pop() {
         minStack.pop();
-        min = minStack.isEmpty() ? Integer.MAX_VALUE : minStack.peek();
+        min = minStack.isEmpty() ? Integer.MAX_VALUE :  minStack.peek();
         return stack.pop();
     }
 
